@@ -13,6 +13,7 @@ node {
   }
   
   stage('build') {
+    agent { label 'dotnet' }
     sh 'dotnet'
   }
   
