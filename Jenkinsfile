@@ -13,7 +13,7 @@ node {
   }
   
   stage('build') {
-    sh 'echo mvn clean package'
+    sh 'dotnet'
   }
   
   stage('deploy') {
