@@ -1,5 +1,5 @@
 pipeline {
-    agent 'dotnet
+    agent 'dotnet'
     stages {
         stage('Example Build') {
             steps {
