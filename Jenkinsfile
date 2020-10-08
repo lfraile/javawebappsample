@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-                dotnet
+                sh 'dotnet'
             }
         }        
     }
