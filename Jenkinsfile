@@ -4,6 +4,7 @@ pipeline {
         stage('Example Build') {
             steps {
                 bat 'dotnet --info'
+                bat 'terraform version'
             }
         }        
     }
