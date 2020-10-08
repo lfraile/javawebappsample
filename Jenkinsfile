@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-                bat 'echo'
+                bat 'dotnet'
             }
         }        
     }
