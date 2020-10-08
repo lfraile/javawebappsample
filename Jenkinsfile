@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example Build') {
             steps {
-                sh 'dotnet --info'
+                sh 'echo hola'
                 //bat 'terraform version'
             }
         }        
