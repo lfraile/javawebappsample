@@ -6,14 +6,15 @@ def getFtpPublishProfile(def publishProfilesJson) {
     if (p['publishMethod'] == 'FTP')
       return [url: p.publishUrl, username: p.userName, password: p.userPWD]
 }
-
+agent {
+  label 'dotnet' 
 node {
   stage('init') {
     checkout scm
   }
   
   stage('build') {
-    agent { label 'dotnet' }
+     
     sh 'dotnet'
   }
   
@@ -35,4 +36,4 @@ node {
     // log out
     sh 'az logout'*/
   }
-}
+}}
